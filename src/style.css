@@ -47,7 +47,7 @@ body {
   margin-left: 0;
 }
 
-.nav__link.is-active {
+.nav__link {
   position: relative;
   display: flex;
   align-items: center;
@@ -62,15 +62,19 @@ body {
   transition: color 0.3s;
 }
 
-.is-active:hover {
+.nav__link:hover {
   color: #00acdc;
 }
 
-.is-active:target {
+.nav__link:target {
   color: #00acdc;
 }
 
-.is-active:target::after {
+.is-active {
+  color: #00acdc;
+}
+
+.is-active::after {
   content: '';
   position: absolute;
   bottom: 0;
